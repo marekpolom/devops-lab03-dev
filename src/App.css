@@ -1,0 +1,46 @@
+.App{
+  text-align: center;
+  width: 100%;
+}
+
+.flag > img{
+  height: 200px;
+  border: solid 1px black;
+}
+
+.flag > p{
+  background-color: white;
+  position: relative;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  row-gap: 50px;
+  padding: 50px 0;
+}
+
+@media only screen and (min-width: 1501px) {
+.main {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .main {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .flag > img{
+    height: 150px;
+  }
+}
